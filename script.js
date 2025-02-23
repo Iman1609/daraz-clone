@@ -62,17 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
         slides.forEach(slide => {
             const visualSearchDiv = document.createElement('div');
             visualSearchDiv.className = 'visual-search absolute top-2 right-2 opacity-0 transition-opacity duration-300';
-            visualSearchDiv.innerHTML = `
-                <div class="visual-search-btn bg-white p-1 rounded-full shadow-md cursor-pointer hover:bg-gray-100">
-                    <img src="./assets/visual-search.svg" alt="Search" class="w-5 h-5">
-                </div>
-                <div class="save-btn bg-white p-1 rounded-full shadow-md cursor-pointer hover:bg-gray-100 mt-1 hidden">
-                    <img src="./assets/save-copy.svg" alt="Save" class="w-5 h-5">
-                </div>
-                <div class="settings-btn bg-white p-1 rounded-full shadow-md cursor-pointer hover:bg-gray-100 mt-1 hidden">
-                    <img src="./assets/horizontal-ellipsis.svg" alt="Settings" class="w-5 h-5">
-                </div>
-            `;
             
             slide.parentElement.style.position = 'relative';
             slide.parentElement.appendChild(visualSearchDiv);
@@ -113,17 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (imageContainer) {
             const visualSearchDiv = document.createElement('div');
             visualSearchDiv.className = 'visual-search absolute top-2 right-2 opacity-0 transition-opacity duration-300';
-            visualSearchDiv.innerHTML = `
-                <div class="visual-search-btn bg-white p-1 rounded-full shadow-md cursor-pointer hover:bg-gray-100">
-                    <img src="./assets/visual-search.svg" alt="Search" class="w-5 h-5">
-                </div>
-                <div class="save-btn bg-white p-1 rounded-full shadow-md cursor-pointer hover:bg-gray-100 mt-1 hidden">
-                    <img src="./assets/save-copy.svg" alt="Save" class="w-5 h-5">
-                </div>
-                <div class="settings-btn bg-white p-1 rounded-full shadow-md cursor-pointer hover:bg-gray-100 mt-1 hidden">
-                    <img src="./assets/horizontal-ellipsis.svg" alt="Settings" class="w-5 h-5">
-                </div>
-            `;
             
             imageContainer.parentElement.style.position = 'relative';
             imageContainer.parentElement.appendChild(visualSearchDiv);
