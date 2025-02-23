@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-[#F5F5F5] font-serif">
+    <header class=" bg-[#F85606] h-[120px] p-2 md:p-4">
+        <nav class="text-white text-xs md:text-sm flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 mr-[5%] ">
+            <p class="hover:opacity-80 cursor-pointer">SAVE ON MORE APP</p>
+            <p class="hover:opacity-80 cursor-pointer">SELL ON DARAZ</p>
+            <p class="hover:opacity-80 cursor-pointer">HELP & SUPPORT</p>
+            <p class="hover:opacity-80 cursor-pointer">LOGIN</p>
+            <p class="hover:opacity-80 cursor-pointer">SIGN UP</p>
+            <p class="hover:opacity-80 cursor-pointer">زبان تبدیل کریں</p>
+        </nav>
+        <div class="flex items-center ml-[5%] mt-[1rem]">
+            <img src="./assets/logo2.png" alt="Daraz Logo" class="h-[40px] w-[120px]">
+            <div class="flex justify-between items-center w-full  md:w-[400px] h-[45px] bg-white rounded-md overflow-hidden ml-[30px]">
+                <input type="text" placeholder="Search in Daraz" class="bg-white h-full w-full pl-[1rem] outline-none">
+                <button class="bg-[#FFE1D2] h-full w-[45px] text-[#F85606] text-[1.2rem] hover:cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="fa-2x text-white ml-[40px]">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z" fill="white"></path>
+                    <path d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z" fill="white"></path>
+                    <path d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z" fill="white"></path>
+                </svg>
+            </div>
+        </div>
+       <!-- Side Navigation Container -->
+<nav class="fixed bottom-4 left-0 flex flex-col items-end space-y-4 bg-[#F5F5F5] p-2 shadow-white rounded-r-lg">
+  
+    <!-- Icon 1 -->
+    <button class="group relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#F85606] focus:outline-none">
+      <i class="fa-solid fa-chevron-up text-xl text-gray-400 active"></i>
+      <span class="absolute left-full ml-2 text-black opacity-0 group-hover:opacity-100 whitespace-nowrap">Top</span>
+    </button>
+  
+    <!-- Icon 2 -->
+    <button class="group relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#F85606] focus:outline-none">
+      <i class="fa-solid fa-fire text-xl text-gray-400"></i>
+      <span class="absolute left-full ml-2 text-black opacity-0 group-hover:opacity-100 whitespace-nowrap">Flash Sale</span>
+    </button>
+  
+    <!-- Icon 3 -->
+    <button class="group relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#F85606] focus:outline-none">
+      <i class="ri-grid-fill text-xl text-gray-400"></i>
+      <span class="absolute left-full ml-2 text-black opacity-0 group-hover:opacity-100 whitespace-nowrap">Categories</span>
+    </button>
+  
+    <!-- Icon 4 -->
+    <button class="group relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#F85606] focus:outline-none">
+      <i class="ri-user-star-line text-xl text-gray-400"></i>
+      <span class="absolute left-full ml-2 text-black opacity-0 group-hover:opacity-100 whitespace-nowrap">Just for You</span>
+    </button>
+  
+    <!-- Icon 5 -->
+    <button class="group relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#F85606] focus:outline-none">
+      <i class="ri-user-star-line text-xl text-gray-400"></i>
+      <span class="absolute left-full ml-2 text-black opacity-0 group-hover:opacity-100 whitespace-nowrap">Just for You</span>
+    </button>
+</div>
+  </nav>
+</header>
+<main>
+    <!-- Hero Section: Slider and App Panel -->
+    <div class="flex flex-col md:flex-row gap-4 justify-center mt-2">
+        <!-- Hero Banner (Image Slider) -->
+        <div class="relative w-full max-w-[988px] overflow-hidden">
+            <!-- Image Slides -->
+            <div class="relative w-full h-[344px]">
+                <img src="./assets/slide 1.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 2.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 3.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 4.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 5.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 6.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 7.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 8.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 9.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 10.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 11.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 12.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+                <img src="./assets/slide 13.jpg" class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-500">
+            </div>
+            <!-- Navigation Buttons -->
+            <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 px-2 py-2 rounded-full"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></button>
+            <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2  px-2 py-2 rounded-full"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button>
+            <!-- Manual Radio Buttons -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <input type="radio" name="slide" id="slide1" >
+                <input type="radio" name="slide" id="slide2" >
+                <input type="radio" name="slide" id="slide3" >
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5" >
+                <input type="radio" name="slide" id="slide6" >
+                <input type="radio" name="slide" id="slide7" >
+                <input type="radio" name="slide" id="slide8" >
+                <input type="radio" name="slide" id="slide9" >
+                <input type="radio" name="slide" id="slide10" >
+                <input type="radio" name="slide" id="slide11" >
+                <input type="radio" name="slide" id="slide12" >
+                <input type="radio" name="slide" id="slide13" >
+            </div>
+        </div>
+        <!-- App Panel -->
+        <div class="app-download-panel hidden md:block">
+            <div class="app-download flex justify-end items-end gap-2">
+                <img src="./assets/try daraz app.png" alt="" class="h-[344px]">
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Section -->
+    <div class="hero-banner-2 relative flex justify-center items-center w-full px-4 mt-4">
+        <img src="./assets/add 1.png" alt="Mid Month Sale Banner" class="h-[140px] w-[90%] rounded-full object-cover">
+        <button class="absolute h-[100px] w-[100px] border-t-[#FFF7B4] bg-[#FFFF26] text-pink-950 font-bold rounded-full right-4 md:right-20">
+            <span class="transition animate-pulse"> Shop Now</span>
+        </button>
+    </div>
+
+<!-- Flash Sale Section -->
+<div class="Flash-Sale flex flex-col justify-items-start content-center mx-[20%] mt-[1rem] ml-[5%] mr-[5%]">
+    <h1 class="text-[1.5rem] text-[#424242] mb-[0.5rem]">Flash Sale</h1>
+    <div class="flash-sale-shop bg-white flex justify-between items-center h-[60px] w-[100%] border-b border-gray-300">
+        <p class="text-orange-400 text[0.9rem] font-bold ml-[1rem]">On Sale Now</p>
+        <button class="text-orange-400 font-bold border h-[35px] p-1 text-[0.9rem] mr-[1rem]">SHOP ALL PRODUCTS</button>
+    </div>
+</div>
+<div class="flash-sale-products bg-white grid grid-cols-6 sm:grid-cols-6 md:grid-cols-6 gap-4 ml-[5%] mr-[5%]">
+    <div class="f-s-item bg-white h-[290px] p-1 flex-col justify-items-start hover:cursor-pointer hover:drop-shadow-lg">
+        <img src="./assets/F1.jpg" alt="" class="h-[180px]">
+        <h1 class="text-black ml-[0.5rem] text-[1rem]">M19 Airpods TWS<br>Bluetooth Earphones</h1>
+        <p class="text-orange-400 text-[1.2 rem] ml-[0.5rem] font-bold">₨848</p>
+        <pre class="ml-[0.5rem]"><span class="text-gray-400 line line-through text-[0.8rem]">₨4,000</span>-79%</pre>
+    </div>
+
+
+    <div class="f-s-item bg-white h-[290px] p-1 flex-col justify-items-start hover:cursor-pointer hover:drop-shadow-lg">
+        <img src="./assets/F2.jpg" alt="" class="h-[180px]">
+        <h1 class="text-black ml-[0.5rem] text-[1rem]">b2 PC Unstitched Suit <br>For Women/Girls...</h1>
+        <p class="text-orange-400 text-[1.2 rem] ml-[0.5rem] font-bold">₨1,750</p>
+        <pre class="ml-[0.5rem]"><span class="text-gray-400 line line-through text-[0.8rem]">₨2,450</span>-28%</pre>
+    </div>
+    <div class="f-s-item bg-white h-[290px] p-1 flex-col justify-items-start hover:cursor-pointer hover:drop-shadow-lg">
+        <img src="./assets/F3.jpg" alt="" class="h-[180px]">
+        <h1 class="text-black ml-[0.5rem] text-[1rem]"> for heatless curls <br> curler bands...</h1>
+        <p class="text-orange-400 text-[1.2 rem] ml-[0.5rem] font-bold">₨176</p>
+        <pre class="ml-[0.5rem]"><span class="text-gray-400 line line-through text-[0.8rem]">₨299</span>-29%</pre>
+    </div>
+    <div class="f-s-item bg-white h-[290px] p-1 flex-col justify-items-start hover:cursor-pointer hover:drop-shadow-lg">
+        <img src="./assets/F4.jpg" alt="" class="h-[180px]">
+        <h1 class="text-black ml-[0.5rem] text-[1rem]">Wall Paper<br>Heat Resistant...</h1>
+        <p class="text-orange-400 text-[1.2 rem] ml-[0.5rem] font-bold">₨296</p>
+        <pre class="ml-[0.5rem]"><span class="text-gray-400 line line-through text-[0.8rem]">₨650</span>-54%</pre>
+    </div>
+    <div class="f-s-item bg-white h-[290px] p-1 flex-col justify-items-start hover:cursor-pointer hover:drop-shadow-lg">
+        <img src="./assets/F5.jpg" alt="" class="h-[180px]">
+        <h1 class="text-black ml-[0.5rem] text-[1rem]">P47 Wireless Headset<br> Bluetooth Headphone</h1>
+        <p class="text-orange-400 text-[1.2 rem] ml-[0.5rem] font-bold">₨839</p>
+        <pre class="ml-[0.5rem]"><span class="text-gray-400 line line-through text-[0.8rem]">₨1,500</span>-44%</pre>
+    </div>
+    <div class="f-s-item bg-white h-[290px] p-1 flex-col justify-items-start hover:cursor-pointer hover:drop-shadow-2xl">
+        <img src="./assets/F6.png" alt="" class="h-[180px]">
+        <h1 class="text-black ml-[0.5rem] text-[1rem]">Closet Organizer Bag<br> Water-resistant...</h1>
+        <p class="text-orange-400 text-[1.2 rem] ml-[0.5rem] font-bold">₨176</p>
+        <pre class="ml-[0.5rem]"><span class="text-gray-400 line line-through text-[0.8rem]">₨299</span>-41%</pre>
+    </div>
+</div> 
+
+  
+    <!-- Categories Section -->
+    <div class="categories flex flex-col justify-items-start content-center mx-[20%] mt-[1rem] ml-[5%] mr-[5%]">
+        <h1 class="text-[1.5rem] text-[#424242] mb-[0.5rem]">Categories</h1>
+        <div class="category-items bg-white h-[300px] w-[100%] grid grid-cols-8 sm:grid-cols-8 md:grid-cols-8 gap-4 justify-items-center content-center">
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c1.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">Cleaning Products</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c2.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">Towel Rails <br> & Warmers</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c3.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">Building Blocks<br>& Toys</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c4.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">Dining Sets</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c5.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">Pet Beds</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c6.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">kids learning</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c7.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">knife sharpners</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-b border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c8.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">pillow covers</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c9.png" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">tablet</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c10.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">table lamp</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c11.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">school bags</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c12.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">skincare</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c13.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">sunglasses</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c14.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">starter kits</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-r border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c15.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">tote bags</p>
+            </div>
+            <div class="items bg-white h-[140px] w-[140px] border-gray-200 flex-col justify-items-center content-center hover:cursor-pointer hover:drop-shadow-lg">
+                <img src="./assets/c16.jpg" alt="" class="h-[80px] mb-[0.5rem]">
+                <p class="text-[0.9rem] text-gray-500 font-bold">winter jackets</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Just For You Section -->
+    <div class="just-for-you flex-col justify-items-start content-center mx-[20%] mt-[1rem] ml-[5%] mr-[5%] my-8 px-4">
+        <h2 class="text-2xl text-[#424242] mb-4">Just For You</h2>
+        <div class="grid grid-cols-6 sm:grid-cols-6 md:grid-cols-6 gap-4 w-full">
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p1.webp" alt="product1" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">TWS Airpods, with Super Bass</h3>
+                <p class="text-orange-500 font-bold">Rs. 799</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★★☆</span>
+                    (102)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p2.jpg" alt="product2" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">GULPATONE Extreme Serum</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,299</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★★☆</span>
+                    (56)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p3.webp" alt="product3" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">New Style Flip Flops</h3>
+                <p class="text-orange-500 font-bold">Rs. 499</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★★☆</span>
+                    (89)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p4.webp" alt="product4" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Bluetooth Earbuds</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (220)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p5.webp" alt="product5" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Original Vintage T9</h3>
+                <p class="text-orange-500 font-bold">Rs. 2,299</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★★★</span>
+                    (78)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p6.jpg" alt="product6" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Moisturizing Socks</h3>
+                <p class="text-orange-500 font-bold">Rs. 399</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★★☆</span>
+                    (45)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p7.webp" alt="product7" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Mini Sim Smart Wallet</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,499</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★★☆</span>
+                    (61)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p8.jpg" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p9.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p10.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p11.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p12.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p13.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p14.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p15.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p16.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p17.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p18.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p19.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-red-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p20.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p21.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p22.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p23.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p24.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p25.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p26.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p27.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-red-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p28.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p29.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p30.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p31.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p32.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p33.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p34.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p35.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <div class="bg-white border p-2 hover:shadow-md transition">
+                <img src="./assets/p2p30.webp" alt="product8" class="w-full h-[150px] object-cover mb-2">
+                <h3 class="text-sm font-medium text-gray-800">Wireless Headphones</h3>
+                <p class="text-orange-500 font-bold">Rs. 1,999</p>
+                <div class="flex items-center text-xs text-gray-500 mt-1">
+                    <span class="text-yellow-400 mr-1">★★★☆☆</span>
+                    (140)
+                </div>
+            </div>
+            <button class="block mx-auto mt-6 px-6 py-2 bg-gray-100 text-gray-700 hover:bg-gray-200 font-semibold border border-gray-300 rounded">
+                LOAD MORE
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER-LIKE SECTION -->
+    <div class="my-8 px-4">
+        <div class="ml-[5%] mr-[5%] grid grid-cols-3 sm:grid-cols-3 gap-8">
+            <!-- Column 1: Customer Care -->
+            <div>
+                <h3 class="text-[#0F1376] text-sm mb-6">Customer Care</h3>
+                <ul class="space-y-1 text-sm text-[#0F1376]">
+                    <li><a href="#" class="hover:underline">Help Center</a></li>
+                    <li><a href="#" class="hover:underline">How to Buy</a></li>
+                    <li><a href="#" class="hover:underline">Corporate & Bulk Purchasing</a></li>
+                    <li><a href="#" class="hover:underline">Returns & Refunds</a></li>
+                    <li><a href="#" class="hover:underline">Daraz Shop</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="#" class="hover:underline">purchase protection</a></li>
+                    <li><a href="#" class="hover:underline">daraz pick up points</a></li>
+                </ul>
+            </div>
+            <!-- Column 2: Daraz -->
+            <div>
+                <h3 class="text-[#0F1376] text-sm mb-2">Daraz</h3>
+                <ul class="space-y-1 text-sm text-[#0F1376]">
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Digital Payments</a></li>
+                    <li><a href="#" class="hover:underline">Daraz Donates</a></li>
+                    <li><a href="#" class="hover:underline">Daraz Blog</a></li>
+                    <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">NTN: 4012116</a></li>
+                    <li><a href="#" class="hover:underline">online shopping app</a></li>
+                    <li><a href="#" class="hover:underline">daraz exclusive</a></li>
+                    <li><a href="#" class="hover:underline">daraz university</a></li>
+                    <li><a href="#" class="hover:underline">sell on daraz</a></li>
+                    <li><a href="#" class="hover:underline">join daraz affiliate program</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: App Download -->
+            <div class="flex flex-col items-center">
+                <img src="./assets/footer logo.png" alt="Happy Shopping" class="w-10 mb-2" />
+                <p class="text-sm text-gray-600 mb-2">Download App</p>
+            <div class="flex space-x-2 ">
+                <a href="#"><img src="./assets/app store 2.png" alt="App Store" class="w-20"></a>
+                <a href="#"><img src="./assets/google play 2.png" alt="Google Play" class="w-20"></a>
+                <a href="#"><img src="./assets/app gallery.png" alt="App Gallery" class="w-20"> </a>
+                </div>
+            </div>
+        </div>
+<!-- New Row: Payment Methods & Verified By -->
+<div class= "bg-white  h-[130px] my-8 px-4  grid grid-cols-2 sm:grid-cols-2 gap-8 ">
+    <!-- Left Column: Payment Methods -->
+    <div class="ml-[5%] mr-[5%]">
+        <h3 class="text-lg text-gray-700 mb-2">Payment Methods</h3>
+        <div class="flex flex-wrap items-center space-x-2">
+            <img src="./assets/cash on deliverry.png" alt="cash on deliverry" class="h-8">
+            <img src="./assets/visa.png" alt="visa" class="h-6">
+            <img src="./assets/mastercard.png" alt="mastercard" class="h-8">
+            <img src="./assets/easypaisa.png" alt="Easypaisa" class="h-8">
+            <img src="./assets/daraz wallet.png" alt="daraz wallet" class="h-8">
+            <img src="./assets/jazzcash.png" alt="jazzcash" class="h-8">
+            <img src="./assets/union pay.png" alt="union pay" class="h-8">
+            <img src="./assets/hbl.png" alt="hbl" class="h-6">
+            <img src="./assets/easy installments.png" alt="easy installments" class="h-8">
+        </div>
+    </div>
+    <!-- Right Column: Verified By -->
+    <div>
+        <h3 class="text-lg text-gray-700 mb-2">Verified By</h3>
+        <div class="flex flex-wrap items-center space-x-2">
+            <img src="./assets/pcidss.png" alt="PCI DSS" class="h-8">
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Only show on large screens (lg) and above -->
+<div class="ml-[5%] mr-[5%] my-8 px-4">
+<h2 class="text-gray-600 font-bold mb-4">How Daraz Transformed Online<br> Shopping in Pakistan</h2>
+<div class="grid grid-cols-4 md:grid-cols-4 gap-8 text-sm text-gray-600 leading-relaxed">
+    <!-- Column 1 -->
+    <div>
+        <p>
+            How Daraz Transformed Online Shopping in Pakistan
+            Daraz first made waves in Pakistan’s e-commerce market after its introduction in 2012. <br>We have since grown to become Pakistan’s largest platform for online shopping with a network <br>spread across Asia in Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np.<br> Our vision was to provide a safe, efficient online marketplace platform for vendors and customers across the country to come together. We started off exclusively as an online fashion retail platform and over the years expanded to become a complete one-stop solution for all your buying needs. Daraz prides itself on not being just another ecommerce venture in Asia. We work tirelessly to make sure that we provide users with the best online online shopping experience and value for their purchases. Whether you shop online through our website or our online shopping mobile App, you can expect easy navigation, customized recommendations, and a smooth online shopping experience guaranteed.
+        </p>
+    </div>
+    <!-- Column 2 -->
+    <div>
+        <p>
+            Shop from Verified Vendors
+            Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!
+            Shop Around the World with Daraz Global Collection
+            International sellers and local convenience come together with Daraz Global collection. Get the chance to shop online from vendors around the world without leaving the Daraz website. Featuring thousands of novelty gadgets and accessories, Daraz Global Collection offers you a selection of products that you won’t find anywhere else when you’re online shopping in Pakistan.
+        </p>
+    </div>
+    <!-- Column 3 -->
+    <div>
+        <h3 class="font-bold mb-2">Top Categories & Brands</h3>
+        <p>
+            MOBILE PHONES IN PAKISTAN
+            Apple iPhones , Honor Mobiles , Huawei Mobiles , Tecno Mobiles , Redmi Mobiles , Xiaomi Mi Mobiles , Nokia Mobiles , OnePlus Mobiles , Oppo Mobile Phones , Realme Mobiles , Samsung Mobile Phones , Vivo Mobile Phones , Mobile Accessories , Smart Watches
+            LATEST LAPTOPS
+            Dell Laptops , HP Laptops , Lenovo Laptops , Mouse , Gaming Graphic Cards , lenovo ideapad 3 , Macbook Pro 13 , Hp Probook 650 G2
+            LED TV
+            Changhong Led Tv , LG Led Tv , Samsung Led Tv , Sony Led Tv , TCL LED TVs
+            HOME APPLIANCES
+            Microwave oven , Geyser , Heater , Refrigerators , Deep Freezers , Generators , Water Dispensers , Fans , Room Cooler , Table Fans , Wall Fans , Exhaust Fans , Pedestal Fans , Window Ac , Solar Panel , Washing Machine
+            DSLR CAMERAS
+            Camera Tripods , Drones , IP & CCTV Cameras , Nikon D7000 , Nikon D5600 , Canon 200D , Canon 1200D , Fujifilm Instax Mini 11 , Canon M50
+        </p>
+    </div>
+    <!-- Column 4 -->
+    <div>
+        <p>
+            WOMEN'S FASHION
+            Al-Karam Studio , Warda , Salitex , Bonanza Satrangi , Edenrobe , Firdous , Junaid Jamshed , Limelight , Sana Safinaz , Mahru , Pushup Bra , Women Undergarments
+            MEN'S FASHION
+            Men's Shirts , Men's T-Shirts
+            ONLINE GROCERY STORE
+            Oil & Ghee , Basmati Rice , Dried Fruits , Chocolates , Mattresses
+            ONLINE BOOK STORE
+            English Books , Islamic Books , History Books , English Literature Books , Kids Urdu Stories , Pride & Prejudice , Harry Potter Story Books , Namal Novel , Nimra Ahmed Novels
+            USED CARS FOR SALE
+            Suzuki Wagon R , KIA Sportage , Honda City , Toyota Prado , Suzuki Alto , Suzuki Cultus , Honda Civic , Honda 125 , Honda 70 , Yamaha Ybr 125 , Hi Speed 150 , Hi Speed Freedom 200 , Metro 70 , Super Power 125 , Monster JMS 3500 Electric Bike , Super Power 70 , Car Accessories
+        </p>
+    </div>
+</div>
+</div>
+
+<!-- Final Footer Row -->
+<div class="bg-white h-[130px] my-8 px-4">
+<div class="ml-[5%] mr-[5%] grid grid-cols-3 sm:grid-cols-3 gap-6 justify-items-center items-center py-8">
+    <!-- Column 1: Daraz International -->
+    <div>
+        <h3 class="text-lg text-gray-600 mb-2">Daraz International</h3>
+        <div class="flex flex-wrap items-center space-x-1">
+            <img src="./assets/pakistan.png" alt="Pakistan" class="h-6"><p class="text-sm text-gray-600">Pakistan</p>
+            <img src="./assets/bangladesh.png" alt="Bangladesh" class="h-6"><p class="text-sm text-gray-600">Bangladesh</p>
+            <img src="./assets/sri-lanka.png" alt="Sri Lanka" class="h-6"><p class="text-sm text-gray-600">Sri-lanka</p>
+            <img src="./assets/maynmar.png" alt="Myanmar" class="h-6"><p class="text-sm text-gray-600">Myanmar</p>
+        </div>
+    </div>
+    <!-- Column 2: Follow Us -->
+    <div>
+        <h3 class="text-lg text-gray-600 mb-2">Follow Us</h3>
+        <div class="flex flex-wrap items-center space-x-2">
+            <img src="./assets/facebook.png" alt="Facebook" class="h-6">
+            <img src="./assets/twitter.png" alt="Twitter" class="h-6">
+            <img src="./assets/insta.png" alt="Instagram" class="h-6">
+            <img src="./assets/youtube.png" alt="YouTube" class="h-6">
+            <img src="./assets/browser.png" alt="Website" class="h-6">
+        </div>
+    </div>
+    <!-- Column 3: Copyright -->
+    <div class="text-right">
+        <p class="text-sm text-gray-600">© Daraz 2026</p>
+    </div>
+</div>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>  
