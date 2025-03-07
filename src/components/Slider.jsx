@@ -33,8 +33,8 @@ function Slider() {
 
   return (
     <div className="flex flex-col md:flex-row gap-4 justify-center">
-      <div className="relative w-full h-[344px] max-w-[988px] overflow-hidden">
-        <div className="relative w-[988px] h-[344px]">
+      <div className="relative w-full h-[200px] sm:h-[300px] md:h-[344px] max-w-[988px] overflow-hidden">
+        <div className="relative w-full h-full">
           {slides.map((slide, index) => (
             <div
               key={index}
